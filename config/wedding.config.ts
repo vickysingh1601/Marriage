@@ -44,22 +44,22 @@ export type WeddingEvent = {
 
 export const wedding = {
   /** "preview" shows sample markings. "live" removes them and hides unconfirmed functions. */
-  mode: "preview" as "preview" | "live",
+  mode: "live",
 
-  siteUrl: "https://marriage-vikas.vercel.app",
+  siteUrl: "https://marriage-sakshi.vercel.app",
   project: {
     name: "The Royal Aangan",
     tagline: "Two Hearts. Two Families. One Beautiful Beginning.",
   },
 
   couple: {
-    bride: { name: "Vikas", initial: "V" },
-    groom: { name: "Sakshi", initial: "S" },
+    bride: { name: "Sakshi", initial: "S" },
+    groom: { name: "Vikas", initial: "V" },
   },
 
   /** The moment the countdown runs to. Sample date in January: replace it with your own. */
-  weddingDateTime: "2027-02-11T00:00:00+05:30",
-  city: "Ujjain, Rajasthan",
+  weddingDateTime: "2027-02-11T14:00:00+05:30",
+  city: "Ujjain, Madhya Pradesh",
 
   invitation: {
     greetingHindi: "पधारो म्हारे आँगन",
@@ -69,47 +69,47 @@ export const wedding = {
     invocation: "॥ श्री गणेशाय नमः ॥",
     message:
       "With the blessings of our families, we invite you to join us as we celebrate the beginning of a beautiful journey.",
-    brideFamily: "Mr. Aparabal",
-    groomFamily: "Mamta Singh",
+    brideFamily: "Mr. Chandresh",
+    groomFamily: "Rani Tiwari",
     familyWording: "request the pleasure of your company",
   },
 
   /** Sample functions. Dates, times and venues are examples only. Confirm each one before going live. */
   events: [
     {
-      id: "haldi", name: "Haldi", illustration: "haldi", confirmed: false,
-      start: "2027-02-09T02:30:00+05:30", end: "2027-01-14T13:00:00+05:30",
-      venue: "[Haldi venue]", address: "[Full address], Kota, Rajasthan", mapsQuery: "Kota, Rajasthan",
-      description: "Turmeric, laughter and a morning of family mischief.",
-      dressCode: "[Dress code, for example shades of yellow]",
-    },
-    {
-      id: "mehendi", name: "Mehendi", illustration: "mehendi", confirmed: false,
-      start: "2027-01-14T15:00:00+05:30", end: "2027-01-14T18:00:00+05:30",
-      venue: "[Mehendi venue]", address: "[Full address], Kota, Rajasthan", mapsQuery: "Kota, Rajasthan",
+      id: "mehendi", name: "Mehendi", illustration: "mehendi", confirmed: true,
+      start: "2027-02-07T12:30:00+05:30", end: "2027-02-07T18:00:00+05:30",
+      venue: "Tripti Kunj", address: "Plot No.70, Street No. 13, Vivekanand Nagar, Kohka, Bhilai, Chhattisgarh", mapsQuery: "689J+FV3 Bhilai, Chhattisgarh",
       description: "An unhurried afternoon of henna, folk songs and sweet chai.",
-      dressCode: "[Dress code, for example shades of green]",
+      dressCode: "Your Shade, Your Style",
     },
     {
-      id: "sangeet", name: "Sangeet", illustration: "sangeet", confirmed: false,
-      start: "2027-01-14T19:30:00+05:30", end: "2027-01-14T23:30:00+05:30",
-      venue: "[Sangeet venue]", address: "[Full address], Kota, Rajasthan", mapsQuery: "Kota, Rajasthan",
-      description: "Both families take the floor. Practise your steps.",
-      dressCode: "[Dress code, for example festive Indian]",
+      id: "haldi", name: "Haldi", illustration: "haldi", confirmed: true,
+      start: "2027-02-10T10:00:00+05:30", end: "2027-02-10T12:00:00+05:30",
+      venue: "Radhe Krishna Resort & Garden", address: "Indore-Ujjain Rd, Indore(Gothada), Madhya Pradesh", mapsQuery: "Radhe Krishna Resort & Garden, Indore",
+      description: "Turmeric, laughter and a morning of family mischief.",
+      dressCode: "Pastel Dreams",
     },
     {
-      id: "wedding", name: "Wedding Ceremony", illustration: "wedding", confirmed: false,
-      start: "2027-01-15T19:00:00+05:30", end: "2027-01-15T23:59:00+05:30",
-      venue: "[Wedding venue]", address: "[Full address], Kota, Rajasthan", mapsQuery: "Kota, Rajasthan",
+      id: "sangeet", name: "Sangeet", illustration: "sangeet", confirmed: true,
+      start: "2027-02-10T19:00:00+05:30", end: "2027-02-10T22:00:00+05:30",
+      venue: "Radhe Krishna Resort & Garden", address: "Indore-Ujjain Rd, Indore(Gothada), Madhya Pradesh", mapsQuery: "Radhe Krishna Resort & Garden, Indore",
+      description: "Our family takes the floor. Practise your steps.",
+      dressCode: "Glamour & Glitter",
+    },
+    {
+      id: "wedding", name: "Wedding Ceremony", illustration: "wedding", confirmed: true,
+      start: "2027-02-11T14:00:00+05:30", end: "2027-02-12T04:00:00+05:30",
+      venue: "Radhe Krishna Resort & Garden", address: "Indore-Ujjain Rd, Indore(Gothada), Madhya Pradesh", mapsQuery: "Radhe Krishna Resort & Garden, Indore",
       description: "The sacred fire, the seven steps and the promise at the heart of it all.",
-      dressCode: "[Dress code, for example traditional Indian]",
+      dressCode: "Draped in Tradition",
     },
     {
-      id: "reception", name: "Reception", illustration: "reception", confirmed: false,
-      start: "2027-01-16T19:30:00+05:30", end: "2027-01-16T23:30:00+05:30",
-      venue: "[Reception venue]", address: "[Full address], Kota, Rajasthan", mapsQuery: "Kota, Rajasthan",
+      id: "reception", name: "Reception", illustration: "reception", confirmed: true,
+      start: "2027-02-23T19:00:00+05:30", end: "2027-02-24T00:00:00+05:30",
+      venue: "Gayatri Palace", address: "Durg-Dhamdha Rd, Durg, Chhattisgarh", mapsQuery: "Gayatri Palace, Durg",
       description: "Dinner, toasts and a first evening together as a married couple.",
-      dressCode: "[Dress code, for example formal]",
+      dressCode: "Glamour After Dark",
     },
   ] as WeddingEvent[],
 
@@ -120,35 +120,32 @@ export const wedding = {
   },
 
   destination: {
-    venueName: "[Main venue name]",
-    address: "[Full street address], Kota, Rajasthan [PIN]",
-    mapsQuery: "Kota, Rajasthan",
+    /** The heading above the venue details. */
+    venueHeading: "Reception in Bhilai",
+    venueName: "Gayatri Palace",
+    address: "Durg-Dhamdha Rd, Durg, Chhattisgarh",
+    mapsQuery: "Gayatri Palace, Durg",
     photo: { src: null, vignette: "courtyard", caption: "Painting: a courtyard in bougainvillea. Replace with a photograph of your venue." } as Photo,
-    stays: [
-      { name: "[Hotel one]", note: "[Distance from venue, and any group rate]" },
-      { name: "[Hotel two]", note: "[Distance from venue, and any group rate]" },
-    ],
-    /** General Kota travel facts checked in November 2026. Review close to the wedding. */
-    rail: "Kota Junction (station code KOTA) sits on the main Delhi to Mumbai line, so many direct trains stop here.",
-    road: "By road, Kota is about four to five hours from Jaipur. Please check the route before you set out.",
-    air: "Kota has no commercial flights yet. Its new airport is expected to open around late 2027. For January, fly to Jaipur (JAI), about 250 km by road, then take a car or train.",
+    /** The two travel buttons in the picture show these lines. */
+    departure: "Our bus leaves from the home at 7:00 AM on 9th February. Join us for the celebrations!",
+    arrival: "The return bus leaves the venue at 8:00 AM on 12th February.",
   },
 
   assistance: {
-    name: "[Contact person]",
-    phone: "+91 00000 00000",
+    name: "Mr. Chandresh Tiwari",
+    phone: "+91 94241 24496",
   },
 
   quiz: [
-    { question: "Who said I love you first?", answer: "bride", reveal: "[Add the story behind this answer.]" },
-    { question: "Who takes longer to get ready?", answer: "groom", reveal: "[Add the story behind this answer.]" },
-    { question: "Who is the bigger foodie?", answer: "groom", reveal: "[Add the story behind this answer.]" },
-    { question: "Who is more romantic?", answer: "bride", reveal: "[Add the story behind this answer.]" },
-    { question: "Who is more likely to forget something?", answer: "bride", reveal: "[Add the story behind this answer.]" },
+    { question: "Who is more likely to convince everyone for a family trip?", answer: "bride", reveal: "Because she can turn a casual family chat into a fully booked holiday before anyone even realises!" },
+    { question: "Who takes longer to get ready?", answer: "bride", reveal: "None! It was a trick question… Shhhh, just go with the answer!" },
+    { question: "Who is the bigger foodie?", answer: "groom", reveal: "Because he wants to try every dish, taste every flavour, and leave no food unexplored!" },
+    { question: "Who is more likely to spend unnecessarily on shopping?", answer: "bride", reveal: "Because every step brings a new find, and she just can't resist taking it home!" },
+    { question: "Who is more likely to forget something?", answer: "bride", reveal: "Because she remembers everything… except the one thing she actually needs!" },
   ] as { question: string; answer: "bride" | "groom"; reveal: string }[],
 
   secretMessage:
-    "[Your secret message to guests who find all three hearts, for example a thank-you, or a table where you left a surprise.]",
+  "You found three hearts, but you've had ours all along.\nNow come and eat!\nSakshi & Vikas",
 
   /**
    * BACKGROUND SOUND. To attach any sound file:
@@ -173,8 +170,6 @@ export const wedding = {
     /** true keeps it silent until a guest presses the sound button. */
     startMuted: false,
   },
-
-  dietaryOptions: ["Vegetarian", "Jain", "Vegan", "No onion or garlic", "Non-vegetarian"],
 };
 
 /** friends: the full invitation. family: everything except Our Story and Moments. */
