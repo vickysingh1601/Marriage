@@ -23,7 +23,7 @@ export type Photo = {
   caption: string;
 };
 
-export type EventIllustration = "haldi" | "mehendi" | "sangeet" | "wedding" | "reception";
+export type EventIllustration = "ring" | "banquet" | "vinayak" | "haldi" | "mehendi" | "sangeet" | "wedding" | "reception";
 
 export type WeddingEvent = {
   id: string;
@@ -46,15 +46,15 @@ export const wedding = {
   /** "preview" shows sample markings. "live" removes them and hides unconfirmed functions. */
   mode: "live",
 
-  siteUrl: "https://marriage-sakshi.vercel.app",
+  siteUrl: "https://marriage-vikas.vercel.app",
   project: {
     name: "The Royal Aangan",
     tagline: "Two Hearts. Two Families. One Beautiful Beginning.",
   },
 
   couple: {
-    bride: { name: "Sakshi", initial: "S" },
-    groom: { name: "Vikas", initial: "V" },
+    bride: { name: "Vikas", initial: "V" },
+    groom: { name: "Sakshi", initial: "S" },
   },
 
   /** The moment the countdown runs to. Sample date in January: replace it with your own. */
@@ -69,33 +69,53 @@ export const wedding = {
     invocation: "॥ श्री गणेशाय नमः ॥",
     message:
       "With the blessings of our families, we invite you to join us as we celebrate the beginning of a beautiful journey.",
-    brideFamily: "Mr. Chandresh",
-    groomFamily: "Rani Tiwari",
+    brideFamily: "Mr. Aparabal",
+    groomFamily: "Mamta Singh",
     familyWording: "request the pleasure of your company",
   },
 
-  /** Sample functions. Dates, times and venues are examples only. Confirm each one before going live. */
   events: [
     {
-      id: "mehendi", name: "Mehendi", illustration: "mehendi", confirmed: true,
-      start: "2027-02-07T12:30:00+05:30", end: "2027-02-07T18:00:00+05:30",
-      venue: "Tripti Kunj", address: "Plot No.70, Street No. 13, Vivekanand Nagar, Kohka, Bhilai, Chhattisgarh", mapsQuery: "689J+FV3 Bhilai, Chhattisgarh",
-      description: "An unhurried afternoon of henna, folk songs and sweet chai.",
-      dressCode: "Your Shade, Your Style",
+      id: "ring", name: "Ring Ceremony", illustration: "ring", confirmed: true,
+      start: "2027-01-31T16:00:00+05:30", end: "2027-01-31T19:00:00+05:30",
+      venue: "Shree Ram Divya Vatika", address: "Near Shrinath Puram Stadium, Shrinath Puram, Kota, Rajasthan 324010", mapsQuery: "4RWC+FF Kota, Rajasthan",
+      description: "Two rings, one promise, and everyone we love there to see it.",
+      dressCode: "Royal Traditional",
+    },
+    {
+      id: "banquet", name: "Banquet Feast", illustration: "banquet", confirmed: true,
+      start: "2027-01-31T19:00:00+05:30", end: "2027-02-01T00:00:00+05:30",
+      venue: "Shree Ram Divya Vatika", address: "Near Shrinath Puram Stadium, Shrinath Puram, Kota, Rajasthan", mapsQuery: "4RWC+FF Kota, Rajasthan",
+      description: "A long table, good food and even better company.",
+      dressCode: "Glamour After Dark",
+    },
+    {
+      id: "vinayak", name: "Vinayak Sthapana", illustration: "vinayak", confirmed: true,
+      start: "2027-02-09T08:00:00+05:30", end: "2027-02-09T10:00:00+05:30",
+      venue: "Home", address: "31/43, Krishnanagar, Rangbari, Kota, Rajasthan", mapsQuery: "4RGQ+3JV Kota, Rajasthan",
+      description: "We begin by seeking Lord Ganesha's blessings for all that lies ahead.",
+      dressCode: "Hues of Red",
     },
     {
       id: "haldi", name: "Haldi", illustration: "haldi", confirmed: true,
-      start: "2027-02-10T10:00:00+05:30", end: "2027-02-10T12:00:00+05:30",
-      venue: "Radhe Krishna Resort & Garden", address: "Indore-Ujjain Rd, Indore(Gothada), Madhya Pradesh", mapsQuery: "Radhe Krishna Resort & Garden, Indore",
+      start: "2027-02-09T12:00:00+05:30", end: "2027-02-09T:15:00+05:30",
+      venue: "Home", address: "31/43, Krishnanagar, Rangbari, Kota, Rajasthan", mapsQuery: "4RGQ+3JV Kota, Rajasthan",
       description: "Turmeric, laughter and a morning of family mischief.",
-      dressCode: "Pastel Dreams",
+      dressCode: "Turmeric Hues",
+    },
+    {
+      id: "mehendi", name: "Mehendi", illustration: "mehendi", confirmed: true,
+      start: "2027-02-10T10:00:00+05:30", end: "2027-02-10T14:00:00+05:30",
+      venue: "Home", address: "31/43, Krishnanagar, Rangbari, Kota, Rajasthan", mapsQuery: "4RGQ+3JV Kota, Rajasthan",
+      description: "An unhurried afternoon of henna, folk songs and sweet chai.",
+      dressCode: "Shades of Henna",
     },
     {
       id: "sangeet", name: "Sangeet", illustration: "sangeet", confirmed: true,
       start: "2027-02-10T19:00:00+05:30", end: "2027-02-10T22:00:00+05:30",
-      venue: "Radhe Krishna Resort & Garden", address: "Indore-Ujjain Rd, Indore(Gothada), Madhya Pradesh", mapsQuery: "Radhe Krishna Resort & Garden, Indore",
+      venue: "Home", address: "31/43, Krishnanagar, Rangbari, Kota, Rajasthan", mapsQuery: "4RGQ+3JV Kota, Rajasthan",
       description: "Our family takes the floor. Practise your steps.",
-      dressCode: "Glamour & Glitter",
+      dressCode: "Your Shade, Your Style",
     },
     {
       id: "wedding", name: "Wedding Ceremony", illustration: "wedding", confirmed: true,
@@ -103,13 +123,6 @@ export const wedding = {
       venue: "Radhe Krishna Resort & Garden", address: "Indore-Ujjain Rd, Indore(Gothada), Madhya Pradesh", mapsQuery: "Radhe Krishna Resort & Garden, Indore",
       description: "The sacred fire, the seven steps and the promise at the heart of it all.",
       dressCode: "Draped in Tradition",
-    },
-    {
-      id: "reception", name: "Reception", illustration: "reception", confirmed: true,
-      start: "2027-02-23T19:00:00+05:30", end: "2027-02-24T00:00:00+05:30",
-      venue: "Gayatri Palace", address: "Durg-Dhamdha Rd, Durg, Chhattisgarh", mapsQuery: "Gayatri Palace, Durg",
-      description: "Dinner, toasts and a first evening together as a married couple.",
-      dressCode: "Glamour After Dark",
     },
   ] as WeddingEvent[],
 
@@ -121,19 +134,19 @@ export const wedding = {
 
   destination: {
     /** The heading above the venue details. */
-    venueHeading: "Reception in Bhilai",
-    venueName: "Gayatri Palace",
-    address: "Durg-Dhamdha Rd, Durg, Chhattisgarh",
-    mapsQuery: "Gayatri Palace, Durg",
+    venueHeading: "Reception in Kota",
+    venueName: "Shree Ram Divya Vatika",
+    address: "Near Shrinath Puram Stadium, Shrinath Puram, Kota, Rajasthan 324010",
+    mapsQuery: "4RWC+FF Kota, Rajasthan",
     photo: { src: null, vignette: "courtyard", caption: "Painting: a courtyard in bougainvillea. Replace with a photograph of your venue." } as Photo,
     /** The two travel buttons in the picture show these lines. */
-    departure: "Our bus leaves from the home at 7:00 AM on 9th February. Join us for the celebrations!",
+    departure: "Our bus leaves from the home at 7:00 AM on 11th February. Join us for the celebrations!",
     arrival: "The return bus leaves the venue at 8:00 AM on 12th February.",
   },
 
   assistance: {
-    name: "Mr. Chandresh Tiwari",
-    phone: "+91 94241 24496",
+    name: "Mr. Aparbal Singh",
+    phone: "+91 73894 78781",
   },
 
   quiz: [
@@ -145,7 +158,7 @@ export const wedding = {
   ] as { question: string; answer: "bride" | "groom"; reveal: string }[],
 
   secretMessage:
-  "You found three hearts, but you've had ours all along.\nNow come and eat!\nSakshi & Vikas",
+  "You found three hearts, but you've had ours all along.\nNow come and eat!\nVikas & Sakshi",
 
   /**
    * BACKGROUND SOUND. To attach any sound file:
