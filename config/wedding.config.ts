@@ -150,11 +150,11 @@ export const wedding = {
   },
 
   quiz: [
-    { question: "Who is more likely to convince everyone for a family trip?", answer: "bride", reveal: "Because she can turn a casual family chat into a fully booked holiday before anyone even realises!" },
-    { question: "Who takes longer to get ready?", answer: "bride", reveal: "None! It was a trick question… Shhhh, just go with the answer!" },
-    { question: "Who is the bigger foodie?", answer: "groom", reveal: "Because he wants to try every dish, taste every flavour, and leave no food unexplored!" },
-    { question: "Who is more likely to spend unnecessarily on shopping?", answer: "bride", reveal: "Because every step brings a new find, and she just can't resist taking it home!" },
-    { question: "Who is more likely to forget something?", answer: "bride", reveal: "Because she remembers everything… except the one thing she actually needs!" },
+    { question: "Who is more likely to convince everyone for a family trip?", answer: "groom", reveal: "Because she can turn a casual family chat into a fully booked holiday before anyone even realises!" },
+    { question: "Who takes longer to get ready?", answer: "groom", reveal: "None! It was a trick question… Shhhh, just go with the answer!" },
+    { question: "Who is the bigger foodie?", answer: "bride", reveal: "Because he wants to try every dish, taste every flavour, and leave no food unexplored!" },
+    { question: "Who is more likely to spend unnecessarily on shopping?", answer: "groom", reveal: "Because every step brings a new find, and she just can't resist taking it home!" },
+    { question: "Who is more likely to forget something?", answer: "groom", reveal: "Because she remembers everything… except the one thing she actually needs!" },
   ] as { question: string; answer: "bride" | "groom"; reveal: string }[],
 
   secretMessage:
